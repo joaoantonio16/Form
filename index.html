@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <title>Formulario Padrão HTML SEM JavaScript</title>
+</head>
+<body>
+    <form action="mailto:teste@gmail.com" method="POST" enctype="text/plain" name="cadastro">
+        <p>Por favor, preencha os campos abaixo e depois clique o botão Enviar. campos
+        necessite apagar os dados, dê um clique no botão Limpar.<br> Muito Obrigado!
+        <br><br><br></p>
+
+Nome Completo<input type="Text" name="nome" size="35">
+Seu e-mail   <input type="Text" name="email" size="35"> <br>
+
+Sexo:<br>
+            <input type="radio" name="sexo" value="f"> Feminino <br>
+            <input type="radio" name="sexo" value="m"> Masculino <br><br>
+
+Estado Civil: <br>
+            <input type="radio" name="civil" value="s"> Solteiro <br>
+            <input type="radio" name="civil" value="c"> Casado <br>
+            <input type="radio" name="civil" value="e"> Enrolado <br>
+
+Bens que possui: <br>
+            <input type="checkbox" name="bens" value="c"> Casa <br>
+            <input type="checkbox" name="bens" value="a"> Automovel <br>
+            <input type="checkbox" name="bens" value="m"> Moto <br>
+
+Faixa de idade: <select name="faixaidade">
+            <option value="3a10"> 3 a 10 anos</option>
+            <option value="11a25"> 11 a 25 anos</option>
+            <option value="26a35"> 26 a 35 anos</option>
+            <option value="36a55"> 36 a 55 anos</option>
+            <option value="56a90"> 56 a 90 anos</option>
+</select>
+
+Hobby preferido: <select name="hobby">
+            <option value="livros"> Ler Livros</option>
+            <option value="musica"> Ouvir música</option>
+            <option value="cinema"> Assistir filmes</option>
+            <option value="esporte"> Praticar esportes</option>
+            <option value="games"> Jogar games</option>
+</select><br><br>
+
+Observações Gerais:<br>
+<textarea name="observações" rows="5" cols="60"></textarea><br>
+
+<input type="submit" value="Enviar os dados">
+<input type="reset" value="Limpar os dados">
+</form>
+</body>
+</html>
